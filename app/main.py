@@ -18,4 +18,5 @@ def add_marital_relations(people: list) -> None:
         if person.get("wife") is not None:
             Person.people[person["name"]].wife = Person.people[person["wife"]]
         elif person.get("husband") is not None:
-            Person.people[person["name"]].husband = Person.people[person["husband"]]
+            Person.people[person["name"]].husband =\
+                Person.people[person["husband"]]
